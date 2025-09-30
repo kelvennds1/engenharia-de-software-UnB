@@ -1,0 +1,1 @@
+Myrottenpotatoes::Application.routes.draw do
