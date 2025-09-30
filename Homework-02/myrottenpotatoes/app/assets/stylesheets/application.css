@@ -104,3 +104,20 @@ form label {
 .button_to.delete input[type="submit"]:hover {
     background-color: #A00000;
 }
+
+.hilite {
+    background-color: yellow !important;
+}
+
+table#movies th a {
+    color: darkslategrey;
+    text-decoration: none;
+}
+
+table#movies th a:hover {
+    text-decoration: underline;
+}
+
+table#movies th.hilite {
+    background-color: yellow !important;
+}
