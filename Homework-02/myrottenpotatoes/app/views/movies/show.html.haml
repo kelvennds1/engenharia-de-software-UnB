@@ -12,4 +12,7 @@
 
 %p#description= @movie.description
 
-= link_to 'Back to movies list', movies_path
+.button-container
+    = button_to 'Edit info', edit_movie_path(@movie), method: :get, class: 'edit'
+    = button_to 'Delete', movie_path(@movie), method: :delete, class: 'delete', data: {confirm: "Are you sure?"}
+    = button_to 'Back', movies_path, method: :get, class: 'back'
