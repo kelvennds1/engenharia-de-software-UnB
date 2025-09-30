@@ -1,6 +1,14 @@
 class MoviesController < ApplicationController
   def index
-    @movies = Movie.all
+    @sort = params[:sort]  # Adicione esta linha para rastrear qual coluna está ordenada
+    @movies = case @sort   # Mudou de params[:sort] para @sort
+              when 'title'
+                Movie.order(:title)
+              when 'release_date'
+                Movie.order(:release_date)
+              else
+                Movie.all
+              end
   end
 
   def show
