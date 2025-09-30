@@ -57,7 +57,3 @@ group :development do
 end
 
 gem "haml"
-
-group :development, :test do
-  gem "debug"
-end
